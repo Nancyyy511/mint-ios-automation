@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Mint iOS Suite" verbose="1" preserve-order="true">
+    <parameter name="BROWSERSTACK_USERNAME" value="nancyawny_ghQmBl"/>
+    <parameter name="BROWSERSTACK_ACCESS_KEY" value="LGk3fZq74N9FLhLBza1g"/>
+    <parameter name="BROWSERSTACK_APP_ID" value="bs://38001f23fc41c131354c5260c6cc33391690e87b"/>
+    <parameter name="BROWSERSTACK_DEVICE" value="iPhone 13"/>
+    <parameter name="BROWSERSTACK_OS_VERSION" value="17"/>
+    <parameter name="BROWSERSTACK_PROJECT" value="Mint-iOS"/>
+    <parameter name="BROWSERSTACK_BUILD" value="Pre-login Flow"/>
+    <parameter name="BROWSERSTACK_HUB_URL" value="https://hub-cloud.browserstack.com/wd/hub"/>
+    <test name="PreLoginThenLogin" preserve-order="true">
+        <classes>
+            <class name="com.mint.tests.IOSPreLoginFlowTest"/>
+            <class name="com.mint.tests.IOSLoginFlowTest"/>
+        </classes>
+    </test>
+</suite>
